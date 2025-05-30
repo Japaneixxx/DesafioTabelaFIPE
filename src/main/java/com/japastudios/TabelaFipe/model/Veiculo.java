@@ -8,11 +8,11 @@ public class Veiculo {
     private int ano;
     private String marca;
 
-    public Veiculo(String modelo, double valor, int ano, String marca) {
-        this.modelo = modelo;
-        this.valor = valor;
-        this.ano = ano;
-        this.marca = marca;
+    public Veiculo(DadosVeiculo dados) {
+        this.modelo = dados.Modelo;
+        this.valor = dados.Valor;
+        this.ano = dados.Ano;
+        this.marca = dados.Marca;
     }
 
     @Override
